@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: cv-ngo-quynh-trang
+    env: static
+    buildCommand: ""
+    staticPublishPath: .

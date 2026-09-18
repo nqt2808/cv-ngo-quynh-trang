@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="CV Ngô Quỳnh Trang - F&B Operations, Customer Experience, Store Support" />
+  <title>Ngô Quỳnh Trang | F&B Operations CV</title>
+
+  <style>
+    :root {
+      --bg: #f6f2ec;
+      --surface: #fffdf9;
+      --surface-2: #efe7dc;
+      --text: #2f2a26;
+      --muted: #746b63;
+      --brand: #6c3f2b;
+      --brand-dark: #4e2d1f;
+      --accent: #b8865b;
+      --line: #ddd2c6;
+      --success: #65745c;
+      --shadow: 0 18px 50px rgba(60, 42, 31, 0.08);
+      --radius-lg: 28px;
+      --radius-md: 18px;
+      --radius-sm: 12px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, "Segoe UI", Arial, sans-serif;
+      background:
+        radial-gradient(circle at top right, rgba(184, 134, 91, 0.12), transparent 30%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .cv-shell {
+      width: min(1180px, 92%);
+      margin: 0 auto;
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 22px 0;
+      border-bottom: 1px solid rgba(108, 63, 43, 0.12);
+    }
+
+    .brand {
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      color: var(--brand);
+      font-size: 14px;
+      text-transform: uppercase;
+    }
+
+    .topbar-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--muted);
+    }
+
+    .topbar-nav a:hover {
+      color: var(--brand);
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 56px;
+      align-items: center;
+      padding: 72px 0 64px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 13px;
+      border: 1px solid rgba(108, 63, 43, 0.15);
+      border-radius: 999px;
+      background: rgba(255, 253, 249, 0.7);
+      color: var(--brand);
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--success);
+      box-shadow: 0 0 0 4px rgba(101, 116, 92, 0.12);
+    }
+
+    h1 {
+      margin: 22px 0 14px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(52px, 7vw, 86px);
+      line-height: 0.98;
+      letter-spacing: -0.035em;
+      color: var(--brand-dark);
+      font-weight: 700;
+    }
+
+    .hero-role {
+      margin: 0 0 22px;
+      color: var(--accent);
+      font-weight: 800;
+      font-size: clamp(20px, 2.4vw, 30px);
+    }
+
+    .hero-summary {
+      max-width: 720px;
+      margin: 0;
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 30px;
+    }
+
+    .btn {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 46px;
+      padding: 0 20px;
+      border-radius: 999px;
+      font-weight: 800;
+      font-size: 14px;
+      transition: 0.2s ease;
+    }
+
+    .btn-primary {
+      background: var(--brand);
+      color: #fff;
+      box-shadow: 0 12px 28px rgba(108, 63, 43, 0.2);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      background: var(--brand-dark);
+    }
+
+    .btn-secondary {
+      border: 1px solid var(--line);
+      background: rgba(255, 253, 249, 0.72);
+      color: var(--brand);
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--brand);
+      background: var(--surface);
+    }
+
+    .hero-metrics {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 34px;
+    }
+
+    .metric {
+      padding: 16px;
+      background: rgba(255, 253, 249, 0.7);
+      border: 1px solid rgba(108, 63, 43, 0.1);
+      border-radius: var(--radius-sm);
+    }
+
+    .metric strong {
+      display: block;
+      color: var(--brand-dark);
+      font-size: 22px;
+      line-height: 1.1;
+      margin-bottom: 6px;
+    }
+
+    .metric span {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .photo-wrap {
+      position: relative;
+    }
+
+    .photo-card {
+      position: relative;
+      padding: 14px;
+      border-radius: 32px;
+      background: var(--surface);
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(108, 63, 43, 0.08);
+      transform: rotate(1.2deg);
+    }
+
+    .photo-card img {
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+      border-radius: 23px;
+    }
+
+    .photo-note {
+      position: absolute;
+      left: -18px;
+      bottom: 30px;
+      max-width: 230px;
+      background: var(--brand-dark);
+      color: #fff;
+      padding: 15px 17px;
+      border-radius: 15px;
+      box-shadow: 0 14px 34px rgba(78, 45, 31, 0.22);
+      font-size: 13px;
+      line-height: 1.5;
+      transform: rotate(-1.2deg);
+    }
+
+    .photo-note strong {
+      display: block;
+      font-size: 14px;
+      margin-bottom: 3px;
+    }
+
+    section {
+      padding: 64px 0;
+    }
+
+    .section-head {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 40px;
+      align-items: end;
+      margin-bottom: 32px;
+    }
+
+    .section-kicker {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--accent);
+      font-weight: 800;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    h2 {
+      margin: 0;
+      color: var(--brand-dark);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(36px, 5vw, 58px);
+      line-height: 1.05;
+      letter-spacing: -0.025em;
+    }
+
+    .section-desc {
+      margin: 0;
+      color: var(--muted);
+      font-size: 17px;
+      max-width: 720px;
+    }
+
+    .strength-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+
+    .strength-card {
+      min-height: 210px;
+      padding: 24px;
+      border-radius: var(--radius-md);
+      background: rgba(255, 253, 249, 0.85);
+      border: 1px solid rgba(108, 63, 43, 0.09);
+      box-shadow: 0 10px 30px rgba(60, 42, 31, 0.04);
+    }
+
+    .strength-number {
+      display: inline-block;
+      margin-bottom: 28px;
+      color: var(--accent);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 22px;
+      font-style: italic;
+    }
+
+    .strength-card h3 {
+      margin: 0 0 10px;
+      color: var(--brand-dark);
+      font-size: 19px;
+    }
+
+    .strength-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .experience-layout {
+      display: grid;
+      grid-template-columns: 0.72fr 1.28fr;
+      gap: 28px;
+      align-items: start;
+    }
+
+    .experience-summary {
+      position: sticky;
+      top: 24px;
+      padding: 28px;
+      border-radius: var(--radius-lg);
+      background: var(--brand-dark);
+      color: #fff;
+      box-shadow: var(--shadow);
+    }
+
+    .experience-summary h3 {
+      margin: 0 0 14px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 30px;
+      line-height: 1.1;
+    }
+
+    .experience-summary p {
+      margin: 0 0 18px;
+      color: rgba(255, 255, 255, 0.77);
+      font-size: 15px;
+    }
+
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .skill-tag {
+      padding: 7px 10px;
+      border: 1px solid rgba(255,255,255,0.16);
+      border-radius: 999px;
+      background: rgba(255,255,255,0.08);
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .timeline {
+      display: grid;
+      gap: 14px;
+    }
+
+    .job {
+      position: relative;
+      padding: 27px 28px 25px 31px;
+      border-radius: var(--radius-md);
+      background: var(--surface);
+      border: 1px solid rgba(108, 63, 43, 0.09);
+      box-shadow: 0 10px 32px rgba(60, 42, 31, 0.045);
+    }
+
+    .job::before {
+      content: "";
+      position: absolute;
+      top: 28px;
+      bottom: 28px;
+      left: 0;
+      width: 4px;
+      border-radius: 0 999px 999px 0;
+      background: var(--accent);
+    }
+
+    .job-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 18px;
+      margin-bottom: 12px;
+    }
+
+    .job h3 {
+      margin: 0 0 4px;
+      color: var(--brand-dark);
+      font-size: 21px;
+    }
+
+    .job-role {
+      margin: 0;
+      color: var(--brand);
+      font-weight: 800;
+      font-size: 14px;
+    }
+
+    .job-time {
+      flex: 0 0 auto;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: var(--surface-2);
+      color: var(--brand);
+      font-weight: 800;
+      font-size: 12px;
+    }
+
+    .job ul {
+      margin: 14px 0 0;
+      padding-left: 18px;
+      color: var(--muted);
+    }
+
+    .job li {
+      margin-bottom: 7px;
+      padding-left: 2px;
+      font-size: 15px;
+    }
+
+    .job li strong {
+      color: var(--text);
+    }
+
+    .profile-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    .profile-card {
+      padding: 26px;
+      border-radius: var(--radius-md);
+      background: rgba(255, 253, 249, 0.86);
+      border: 1px solid rgba(108, 63, 43, 0.09);
+    }
+
+    .profile-card h3 {
+      margin: 0 0 10px;
+      color: var(--brand-dark);
+      font-size: 19px;
+    }
+
+    .profile-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .profile-card .mini-label {
+      display: inline-block;
+      margin-bottom: 8px;
+      color: var(--accent);
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .contact-panel {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+      padding: 38px;
+      border-radius: 30px;
+      background: var(--surface-2);
+      border: 1px solid rgba(108, 63, 43, 0.1);
+    }
+
+    .contact-panel h2 {
+      font-size: clamp(34px, 4.2vw, 52px);
+    }
+
+    .contact-copy {
+      margin: 14px 0 0;
+      color: var(--muted);
+      max-width: 520px;
+    }
+
+    .contact-list {
+      display: grid;
+      gap: 12px;
+      align-content: center;
+    }
+
+    .contact-item {
+      display: grid;
+      grid-template-columns: 90px 1fr;
+      gap: 14px;
+      padding: 14px 0;
+      border-bottom: 1px solid rgba(108, 63, 43, 0.12);
+    }
+
+    .contact-item:last-child {
+      border-bottom: 0;
+    }
+
+    .contact-item span {
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .contact-item strong,
+    .contact-item a {
+      color: var(--brand-dark);
+      font-size: 15px;
+      font-weight: 800;
+      word-break: break-word;
+    }
+
+    footer {
+      padding: 30px 0 44px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    @media (max-width: 980px) {
+      .hero,
+      .section-head,
+      .experience-layout,
+      .contact-panel {
+        grid-template-columns: 1fr;
+      }
+
+      .strength-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .experience-summary {
+        position: static;
+      }
+
+      .photo-wrap {
+        max-width: 560px;
+      }
+    }
+
+    @media (max-width: 680px) {
+      .topbar {
+        align-items: flex-start;
+      }
+
+      .topbar-nav {
+        display: none;
+      }
+
+      .hero {
+        padding-top: 48px;
+      }
+
+      .hero-metrics,
+      .strength-grid,
+      .profile-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .photo-note {
+        position: static;
+        margin-top: 12px;
+        max-width: none;
+        transform: none;
+      }
+
+      .job-top {
+        flex-direction: column;
+      }
+
+      .contact-panel {
+        padding: 26px;
+      }
+
+      .contact-item {
+        grid-template-columns: 1fr;
+        gap: 4px;
+      }
+    }
+
+    @media print {
+      body {
+        background: #fff;
+      }
+
+      .topbar-nav,
+      .hero-actions {
+        display: none;
+      }
+
+      section,
+      .hero {
+        break-inside: avoid;
+      }
+
+      .experience-summary,
+      .job,
+      .profile-card,
+      .strength-card,
+      .contact-panel,
+      .photo-card {
+        box-shadow: none;
+      }
+
+      .cv-shell {
+        width: 94%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="cv-shell">
+    <header class="topbar">
+      <div class="brand">Ngô Quỳnh Trang · CV</div>
+      <nav class="topbar-nav" aria-label="Điều hướng CV">
+        <a href="#strengths">Năng lực</a>
+        <a href="#experience">Kinh nghiệm</a>
+        <a href="#profile">Hồ sơ</a>
+        <a href="#contact">Liên hệ</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <div class="eyebrow">
+            <span class="eyebrow-dot"></span>
+            F&B Operations · Customer Experience · Store Support
+          </div>
+
+          <h1>Ngô Quỳnh Trang</h1>
+
+          <p class="hero-role">
+            Ứng viên định hướng phát triển trong ngành F&B
+          </p>
+
+          <p class="hero-summary">
+            Sinh viên Kinh tế số với khoảng 3 năm kinh nghiệm thực tế trong môi trường dịch vụ,
+            nhà hàng, khu vui chơi và chuỗi cà phê. Có kinh nghiệm ở các vị trí thu ngân, phục vụ,
+            bar, tư vấn sản phẩm và hỗ trợ vận hành cửa hàng. Mong muốn phát triển theo hướng
+            vận hành F&B, trải nghiệm khách hàng và hỗ trợ quản lý cửa hàng bằng tư duy dịch vụ,
+            dữ liệu và tinh thần chủ động.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#experience" class="btn btn-primary">Xem kinh nghiệm F&B</a>
+            <a href="mailto:nqtrang2808@gmail.com" class="btn btn-secondary">nqtrang2808@gmail.com</a>
+            <a href="tel:0834240479" class="btn btn-secondary">0834 240 479</a>
+          </div>
+
+          <div class="hero-metrics">
+            <div class="metric">
+              <strong>~3 năm</strong>
+              <span>Kinh nghiệm dịch vụ & vận hành thực tế</span>
+            </div>
+            <div class="metric">
+              <strong>5 môi trường</strong>
+              <span>F&B, retail service và customer experience</span>
+            </div>
+            <div class="metric">
+              <strong>Đa nhiệm</strong>
+              <span>POS · phục vụ · bar · doanh thu · công/lương</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="photo-wrap">
+          <div class="photo-card">
+            <img
+              src="https://res.cloudinary.com/dojibbcof/image/upload/v1779867230/683352633_2376554676091479_8480479538431842633_n_w91sd5.jpg"
+              alt="Ngô Quỳnh Trang"
+            />
+          </div>
+          <div class="photo-note">
+            <strong>Định hướng nghề nghiệp</strong>
+            Phát triển từ vận hành tuyến đầu lên các vai trò hỗ trợ quản lý cửa hàng,
+            customer experience và vận hành chuỗi F&B.
+          </div>
+        </div>
+      </section>
+
+      <section id="strengths">
+        <div class="section-head">
+          <div>
+            <span class="section-kicker">Core strengths</span>
+            <h2>Năng lực phù hợp với môi trường F&B</h2>
+          </div>
+          <p class="section-desc">
+            Thay vì trình bày kỹ năng theo kiểu liệt kê chung, phần này tập trung vào các năng lực
+            nhà tuyển dụng F&B thường quan tâm: trải nghiệm khách hàng, tốc độ vận hành, độ chính xác,
+            phối hợp ca và khả năng hỗ trợ số liệu.
+          </p>
+        </div>
+
+        <div class="strength-grid">
+          <article class="strength-card">
+            <span class="strength-number">01</span>
+            <h3>Customer Experience</h3>
+            <p>
+              Giao tiếp trực tiếp với khách hàng, hướng dẫn order, tư vấn sản phẩm,
+              giới thiệu combo và hỗ trợ xử lý nhu cầu trong quá trình sử dụng dịch vụ.
+            </p>
+          </article>
+
+          <article class="strength-card">
+            <span class="strength-number">02</span>
+            <h3>Store Operations</h3>
+            <p>
+              Có kinh nghiệm set up đầu ca, cuối ca, refill, vệ sinh khu vực,
+              chuẩn bị nguyên liệu và hỗ trợ các vị trí khác khi cửa hàng đông khách.
+            </p>
+          </article>
+
+          <article class="strength-card">
+            <span class="strength-number">03</span>
+            <h3>POS & Cashier</h3>
+            <p>
+              Thực hiện thanh toán, thao tác POS, đóng gói đơn mang đi/đơn giao hàng
+              và hỗ trợ kiểm soát giao dịch trong ca.
+            </p>
+          </article>
+
+          <article class="strength-card">
+            <span class="strength-number">04</span>
+            <h3>Revenue Support</h3>
+            <p>
+              Có kinh nghiệm hỗ trợ tổng hợp doanh thu, tính công, tính lương và xử lý
+              một số báo cáo nội bộ theo nhiệm vụ được giao tại cửa hàng.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="experience">
+        <div class="section-head">
+          <div>
+            <span class="section-kicker">Experience</span>
+            <h2>Kinh nghiệm làm việc</h2>
+          </div>
+          <p class="section-desc">
+            Kinh nghiệm được sắp theo hướng cho thấy sự phát triển từ các vị trí tuyến đầu
+            đến vai trò đa nhiệm hơn trong môi trường cửa hàng và chuỗi dịch vụ.
+          </p>
+        </div>
+
+        <div class="experience-layout">
+          <aside class="experience-summary">
+            <h3>Profile F&B</h3>
+            <p>
+              Điểm mạnh nổi bật là trải nghiệm thực tế ở nhiều mô hình dịch vụ,
+              khả năng thích nghi nhanh và sẵn sàng hỗ trợ nhiều vị trí trong cùng một ca làm việc.
+            </p>
+
+            <div class="skill-tags">
+              <span class="skill-tag">POS</span>
+              <span class="skill-tag">Cashier</span>
+              <span class="skill-tag">Customer Service</span>
+              <span class="skill-tag">Bar Support</span>
+              <span class="skill-tag">Upselling</span>
+              <span class="skill-tag">Refill</span>
+              <span class="skill-tag">Shift Support</span>
+              <span class="skill-tag">Revenue Report</span>
+              <span class="skill-tag">Timesheet</span>
+              <span class="skill-tag">Teamwork</span>
+            </div>
+          </aside>
+
+          <div class="timeline">
+            <article class="job">
+              <div class="job-top">
+                <div>
+                  <h3>Trung Nguyên Legend Âu Lạc Huế</h3>
+                  <p class="job-role">Phục vụ · Thu ngân · Hỗ trợ vận hành & báo cáo</p>
+                </div>
+                <span class="job-time">03/2026 – nay</span>
+              </div>
+              <ul>
+                <li>Phục vụ khách hàng theo tiêu chuẩn cửa hàng và duy trì trải nghiệm dịch vụ trong ca.</li>
+                <li>Tư vấn đồ uống và sản phẩm retail; hỗ trợ khách lựa chọn sản phẩm phù hợp nhu cầu.</li>
+                <li>Thực hiện <strong>set up đầu ca/cuối ca</strong>, đảm bảo khu vực làm việc đúng quy trình.</li>
+                <li>Thực hiện thu ngân, thanh toán và hỗ trợ xử lý giao dịch phát sinh trong ca.</li>
+                <li>Được giao thêm nhiệm vụ <strong>hỗ trợ tính công, tính lương và tổng hợp báo cáo doanh thu</strong>.</li>
+                <li>Linh động thời gian và chủ động hỗ trợ các vị trí khác khi cửa hàng cần nhân sự.</li>
+              </ul>
+            </article>
+
+            <article class="job">
+              <div class="job-top">
+                <div>
+                  <h3>Tiniworld Aeon Huế</h3>
+                  <p class="job-role">Thu ngân · Phục vụ · Bar</p>
+                </div>
+                <span class="job-time">08/2024 – 03/2026</span>
+              </div>
+              <ul>
+                <li>Thực hiện thanh toán, hướng dẫn khách và giới thiệu combo/sản phẩm đi kèm.</li>
+                <li>Nhận order đồ ăn, thức uống và hỗ trợ khách trong quá trình sử dụng dịch vụ.</li>
+                <li>Pha chế đồ uống theo công thức, tiêu chuẩn và định lượng của đơn vị.</li>
+                <li>Chuẩn bị nguyên liệu như coffee, trà sữa, kem muối, sương sáo và các loại trà.</li>
+                <li>Hỗ trợ tổ chức sinh nhật, hoạt động marketing tại điểm bán và phối hợp với các khu vực khác.</li>
+              </ul>
+            </article>
+
+            <article class="job">
+              <div class="job-top">
+                <div>
+                  <h3>Dookki Vincom Huế</h3>
+                  <p class="job-role">Steward / Hỗ trợ vận hành khu vực bếp</p>
+                </div>
+                <span class="job-time">02/2024 – 06/2024</span>
+              </div>
+              <ul>
+                <li>Vệ sinh dụng cụ sau sử dụng, đảm bảo sạch sẽ và sẵn sàng cho vòng phục vụ tiếp theo.</li>
+                <li>Sắp xếp dụng cụ khoa học, hỗ trợ luồng công việc của bộ phận bếp và phục vụ.</li>
+                <li>Duy trì khu vực làm việc gọn gàng trong môi trường có nhịp độ cao.</li>
+              </ul>
+            </article>
+
+            <article class="job">
+              <div class="job-top">
+                <div>
+                  <h3>Dookki Coop Mart Đồng Hới</h3>
+                  <p class="job-role">Nhân viên phục vụ</p>
+                </div>
+                <span class="job-time">07/2023 – 09/2023</span>
+              </div>
+              <ul>
+                <li>Đón khách, sắp xếp bàn phù hợp và hướng dẫn cách sử dụng dịch vụ tại nhà hàng.</li>
+                <li>Chuẩn bị và refill các loại sốt, theo dõi tình trạng quầy để bổ sung kịp thời.</li>
+                <li>Dọn bàn nhanh, đảm bảo vệ sinh và hỗ trợ xoay vòng bàn trong giờ cao điểm.</li>
+              </ul>
+            </article>
+
+            <article class="job">
+              <div class="job-top">
+                <div>
+                  <h3>Jollibee Vincom Đồng Hới</h3>
+                  <p class="job-role">Nhân viên thu ngân</p>
+                </div>
+                <span class="job-time">12/2022 – 01/2023</span>
+              </div>
+              <ul>
+                <li>Thực hiện thanh toán và giới thiệu sản phẩm tới khách hàng.</li>
+                <li>Hỗ trợ đóng gói đơn mang đi và đơn giao hàng.</li>
+                <li>Chuẩn bị một số sản phẩm phụ và hỗ trợ vệ sinh khu vực cuối ca.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="profile">
+        <div class="section-head">
+          <div>
+            <span class="section-kicker">About</span>
+            <h2>Học vấn & định hướng</h2>
+          </div>
+          <p class="section-desc">
+            Chuyên ngành Kinh tế số là nền tảng bổ trợ cho định hướng F&B:
+            làm việc với dữ liệu, doanh thu, quy trình và các công cụ số trong vận hành doanh nghiệp.
+          </p>
+        </div>
+
+        <div class="profile-grid">
+          <article class="profile-card">
+            <span class="mini-label">Education</span>
+            <h3>Trường Đại học Kinh tế Huế</h3>
+            <p>
+              <strong>2023 – nay</strong><br />
+              Chuyên ngành Kinh tế số.
+            </p>
+          </article>
+
+          <article class="profile-card">
+            <span class="mini-label">Target role</span>
+            <h3>Vị trí mong muốn</h3>
+            <p>
+              Thực tập sinh / nhân sự junior ở các mảng vận hành F&B, customer experience,
+              hỗ trợ quản lý cửa hàng, kinh doanh hoặc sales operations.
+            </p>
+          </article>
+
+          <article class="profile-card">
+            <span class="mini-label">Work style</span>
+            <h3>Phong cách làm việc</h3>
+            <p>
+              Chủ động, trách nhiệm, thích nghi nhanh với môi trường đông khách,
+              có tinh thần hỗ trợ đội nhóm và sẵn sàng học quy trình mới.
+            </p>
+          </article>
+
+          <article class="profile-card">
+            <span class="mini-label">Career direction</span>
+            <h3>Định hướng phát triển</h3>
+            <p>
+              Xây nền tảng vững về vận hành cửa hàng và dịch vụ khách hàng,
+              sau đó phát triển lên các vai trò hỗ trợ quản lý vận hành hoặc vận hành chuỗi.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="contact-panel">
+          <div>
+            <span class="section-kicker">Contact</span>
+            <h2>Sẵn sàng cho cơ hội tiếp theo trong F&B</h2>
+            <p class="contact-copy">
+              Tôi mong muốn được trao đổi về các vị trí phù hợp với kinh nghiệm tuyến đầu,
+              khả năng vận hành đa nhiệm và định hướng phát triển lâu dài trong ngành F&B.
+            </p>
+          </div>
+
+          <div class="contact-list">
+            <div class="contact-item">
+              <span>Điện thoại</span>
+              <a href="tel:0834240479">0834 240 479</a>
+            </div>
+
+            <div class="contact-item">
+              <span>Email</span>
+              <a href="mailto:nqtrang2808@gmail.com">nqtrang2808@gmail.com</a>
+            </div>
+
+            <div class="contact-item">
+              <span>Địa chỉ</span>
+              <strong>Ngự Bình, Phường An Cựu, TP Huế</strong>
+            </div>
+
+            <div class="contact-item">
+              <span>Ngày sinh</span>
+              <strong>28/08/2005</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      © 2026 Ngô Quỳnh Trang · F&B Operations CV
+    </footer>
+  </div>
+</body>
+</html>
